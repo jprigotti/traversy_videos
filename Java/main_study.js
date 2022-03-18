@@ -156,4 +156,91 @@ const todoCompleted = todos.filter(function(todo){
 });
 console.log(todoCompleted);
 
+/* Simple condition */
+const x1 = 9;
 
+if (x1===10){
+    console.log('x is 10');
+    }else if(x1 > 10){
+        console.log('x is greater than 10');
+    }else{
+        console.log('x is less than 10');
+    }
+
+/* Multiple condition */
+const x2 =6;
+const y2 = 11;
+
+if (x2 > 5 && y2 > 10){
+    console.log('x is more than 5 and y is more than 10');
+}
+
+/* The Ternary Operator */
+const x3 = 11;
+ const color = x3 > 10 ? 'red' : 'blue';
+ console.log(color);
+
+
+ /* Switches */
+
+ switch (color){
+    case 'red' :
+        console.log ('color is red');
+        break;
+    case 'blue':
+        console.log ('color is blue');
+        break;
+    default:
+        console.log ('colos it neither red nor blue');
+        break;
+     }
+
+/* Functions */
+
+function addNums (num1=1, num2=1){
+    console.log(num1+num2);
+}
+
+addNums (4,6);
+
+/* if we call the funtion and passed no values, it will return NaN "not a number"
+so, we can define the function with num1=1, num2=1, so if we passed no number
+it will use 1, but if we do pass a number, it will work as expected.
+*/
+
+/* usually we use return in the functions */
+
+function addNums1 (num1=1, num2=1){
+    return num1+num2;
+}
+
+console.log(addNums1(5,7));
+
+/* Arrow functions 
+They are very handy and clean things up quite a bit */
+
+const addNums2 = (num1 =1, num2 =1) => {
+    return num1 + num2;
+}
+console.log(addNums2(5,5));
+
+/* If it is only one line, it can be summarized as follows
+const addNums2 = (num3 =1, num4 =1) => num3 + num4;
+*/
+
+/* We can also use the Arrow Functions in Objects */
+todos.forEach((todo)=>console.log(todo));
+
+
+/* Constructor function */
+function Person (firstName, lastName, dob){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.dob = dob;
+}
+
+const person1 = new Person ('John', 'Doe', '4-3-1980');
+const person2= new Person ('Mary', 'Smith', '5-3-1990');
+
+console.log(person);
+console.log(person2.firstName);

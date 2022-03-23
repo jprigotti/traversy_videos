@@ -244,3 +244,9 @@ const person2= new Person ('Mary', 'Smith', '5-3-1990');
 
 console.log(person);
 console.log(person2.firstName);
+
+
+function showtime(){
+    var now = new Date();
+    alert(now.getHours)
+}

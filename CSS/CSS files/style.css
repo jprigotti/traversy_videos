@@ -20,6 +20,20 @@ body{
 	margin: 0;
 }
 
+.h1_header{
+	margin: auto;
+	padding: 20px 0px;
+	text-align: center;
+	color: #f4f4f4;
+	text-shadow: 3px 3px 1px black;
+
+}
+
+.logo_image{
+	display: block;
+	margin: 0 auto;
+}
+
 /*
 .button{
 	background-color: #333;
@@ -74,7 +88,7 @@ a:active{
 Same as below*/
 
 	border: 5px red solid;
-	border-width: 3px;
+	border-width: 5px;
 	border-bottom-width: 10px;
 
 /*
@@ -89,7 +103,7 @@ Same as below*/
 
 .box-2{
 border: 3px dotted #ccc;
-padding: 20pm;
+padding: 2em;
 margin: 20px 0;
 }
 
@@ -123,13 +137,17 @@ margin: 20px 0;
 
 
 .my-form{
-
-	padding: 20px;
+	margin: 0;
+	padding: 0;
+	border: solid 1px #333;
+	border-radius: 10px;
 }
 
 
 .my-form.form-group{
-	padding-bottom: 15px;
+	background-color: aqua;
+	padding-bottom: 100px;
+	margin: auto;
 }
 
 .my-form label{
@@ -137,8 +155,9 @@ margin: 20px 0;
 }
 
 .my-form input[type="text"], input[type="email"], input[type="date"], input[type="number"],textarea{
-	padding: 8px;
-	width: 100%;
+	padding: 6px;
+	margin: auto;
+	width: 80%;
 
 }
 
